@@ -1,5 +1,8 @@
+using Tienda.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSingleton<AccesoDatos>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
